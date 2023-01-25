@@ -1,0 +1,18 @@
+<div class="w-[50%] bg-slate-50 mx-auto py-3 mt-3">
+    <div class="" *ngFor="let datos of data">       
+      
+        <div class="bg-zinc-800" *ngIf="(datos.name | uppercase) === nombre">
+            <div class="grid grid-cols-2 text-center mb-2">
+                <div class="bg-zinc-800 mx-2 rounded">
+                    <img src="{{datos.image}}" alt="" width="350" height="350">
+                </div>
+               
+                <div class="mt-[100px]">
+                    <p class="text-blue-300 font-bold text-2xl">{{datos.position}}</p>
+                    <p class="font-semibold text-white"> {{datos.name | uppercase}}</p>
+                </div>               
+                
+            </div>
+        </div>
+    </div>   
+</div>
